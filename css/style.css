@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;;
+}
+
+#input-text{
+  width: 200px;
+  height: 30px;
+  margin: 20px;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+#button-text{
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
