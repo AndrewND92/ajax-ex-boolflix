@@ -20,12 +20,35 @@ function getMovies() {
       "query" : query
     },
 
-    succes: function(data) {
+    success: function(data) {
       console.log(data);
+
+      var movies = data["results"];
+
+      var target = $("#results ul");
+      var template = $("#movie-template").html();
+      var compiled = Handlebars.compile(template);
+
+
+      for (var i = 0; i < movies.length; i++) {
+
+        var movie = movies[i];
+        var movieHTML = compiled(movie);
+        target.append(movieHTML);
+      }
+
+
+
+
+
+
+
+
+
     },
 
     error: function(error){
-      console.log(error);
+      console.log("ops,che succede?",error);
     }
 
   });
