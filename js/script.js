@@ -10,6 +10,7 @@ function getMovies() {
 
   var target = $("#input-text");
   var query = target.val();
+  target.val("");
 
   $.ajax ({
 
@@ -24,8 +25,9 @@ function getMovies() {
       console.log(data);
 
       var movies = data["results"];
-
       var target = $("#results ul");
+      target.text("");
+
       var template = $("#movie-template").html();
       var compiled = Handlebars.compile(template);
 

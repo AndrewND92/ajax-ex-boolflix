@@ -5,18 +5,39 @@
 }
 
 #input-text{
-  width: 200px;
-  height: 30px;
+  width: 350px;
+  height: 40px;
   margin: 20px;
   padding: 8px;
-  font-size: 15px;
+  font-size: 20px;
   border-radius: 5px;
   border: 1px solid grey;
 }
 
 #button-text{
-  width: 80px;
-  height: 30px;
+  width: 90px;
+  height: 40px;
+  font-size: 15px;
   border-radius: 5px;
   border: 1px solid grey;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#1D1D1D;
+  height: 100px;
+}
+#results{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#results li{
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border:solid 1px black;
 }
